@@ -1,6 +1,7 @@
 from json import load, dump
 from time import sleep
 from cryptography.fernet import Fernet
+from os import mkdir
 
 print('Hello there, welcome to the setup of the core bot! You will be asked to fill in some values fort he bot to function properly.\n\
 Please read CONFIG_INFO.TXT before!')
@@ -8,6 +9,8 @@ sleep(2)
 print('-'*20)
 if input('Would you like to create data files? Respond with "y" if you would, respond with the any other key if not.\n\
 Use this only if you haven\'t created data files before').lower() == 'y':
+    mkdir('.tmp')
+    mkdir('backgrounds')
     print('Creating database...')
     from modules.db_manager import Database, SQLType, Data
 

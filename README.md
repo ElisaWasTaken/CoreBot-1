@@ -1,7 +1,4 @@
-Run `pip install -r requirements.txt`<br>
-Run setup.py
-
-If running first time, create datafiles as asked.
+Just run `setup.py`, it will do everything
 
 Fill in the fields asked by a setup.<br>
 Fields description:<ul>
